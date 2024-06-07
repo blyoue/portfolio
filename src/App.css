@@ -1,0 +1,49 @@
+@import 'loaders.css/loaders.min.css';
+
+#root {
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -96px;
+  width: 72px;
+  translate: -36px 0;
+  animation: slideAndFadeOut 2.3s forwards;
+  transition: all;
+  opacity: 1;
+}
+
+
+.loader-inner div {
+  background-color:#facc15;
+  width: 20px;
+  height: 20px;
+}
+
+
+@keyframes slideAndFadeOut {
+  0% {
+    left: -104px;
+  }
+  33%, 66% {
+    left: calc(50% - 30px);
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    left: calc(100% + 36px) ;
+    opacity: 0;
+  }
+}
