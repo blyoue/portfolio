@@ -5,7 +5,7 @@ import { faLinkedin,faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
 function Sidebar() {
     return (
-        <div className="w-15 h-full bg-side flex flex-col justify-center items-center relative">
+        <div className="w-15 min-w-[60px] h-full bg-side flex flex-col justify-center items-center relative">
             <nav className='flex flex-col'>
                 <NavLink to='/' className='relative group my-3'>
                     {({ isActive }) => (
